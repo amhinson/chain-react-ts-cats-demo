@@ -1,4 +1,5 @@
 import { baseAPI } from "./baseService";
+import { logError } from "../utilities/errorUtils";
 
 export const getCats = () => {
   return baseAPI
@@ -20,5 +21,6 @@ export const voteForCat = (imageId, value) => {
         value
       }
     })
-    .then(({ data }) => data);
+    .then(({ data }) => data)
+    .catch(error => logError(erorr));
 };

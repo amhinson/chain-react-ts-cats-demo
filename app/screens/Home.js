@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { FlatList, StyleSheet, TouchableOpacity, Text } from "react-native";
-import { Card, ListItem, Button, Image, Icon } from "react-native-elements";
+import { StyleSheet } from "react-native";
+import { FlatList, TouchableOpacity } from "react-native-gesture-handler";
+import { Image } from "react-native-elements";
 import { getCats } from "../services/catService";
 
 const Home = props => {
