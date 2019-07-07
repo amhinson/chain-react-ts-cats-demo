@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { createAppContainer, createStackNavigator } from "react-navigation";
 import Home from "./screens/Home";
 import RateCat from "./screens/RateCat";
