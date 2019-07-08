@@ -1,4 +1,4 @@
-export const logError = error => {
-  console.log(error);
-  throw error;
+export const logError = (location, error) => {
+  const message = (error && error.message) || error;
+  console.wran(location, message);
 };

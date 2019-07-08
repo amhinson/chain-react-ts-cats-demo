@@ -11,7 +11,7 @@ const RateCat = props => {
   async function rate(value) {
     await voteForCat(cat.id, value);
 
-    Toast.show(value ? "You liked the cat! :)" : "You didn't like the cat :(", {
+    Toast.show(value ? "You liked the cat! 👍" : "You didn't like the cat 👎", {
       backgroundColor: value ? "#49e656" : "#eb5050"
     });
     props.navigation.goBack();
