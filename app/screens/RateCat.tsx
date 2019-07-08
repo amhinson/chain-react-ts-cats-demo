@@ -13,12 +13,12 @@ interface Params {
 interface Props {}
 
 const RateCat: NavigationScreenComponent<Params, null, Props> = props => {
-  const { cat } = props.navigation.state.params;
+  const { cat } = props.navigation.state.params!;
 
   async function rate(value: boolean) {
     await voteForCat(cat.id, value);
 
-    Toast.show(value ? "You liked the cat! :)" : "You didn't like the cat :(", {
+    Toast.show(value ? "You liked the cat! 👍" : "You didn't like the cat 👎", {
       backgroundColor: value ? "#49e656" : "#eb5050"
     });
     props.navigation.goBack();

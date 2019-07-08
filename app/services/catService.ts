@@ -22,5 +22,5 @@ export const voteForCat = (imageId: string, value: boolean): Promise<void> => {
       }
     })
     .then(({ data }) => data)
-    .catch(error => logError(error));
+    .catch(error => logError("voteForCat", error));
 };

@@ -1,4 +1,4 @@
-export const logError = (error: any) => {
-  console.log(error);
-  throw error;
+export const logError = (location: string, error?: Error) => {
+  const message = (error && error.message) || error;
+  console.warn(location, message);
 };
