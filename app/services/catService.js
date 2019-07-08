@@ -22,5 +22,5 @@ export const voteForCat = (imageId, value) => {
       }
     })
     .then(({ data }) => data)
-    .catch(error => logError(erorr));
+    .catch(error => logError(error));
 };
