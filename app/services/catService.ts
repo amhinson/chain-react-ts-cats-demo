@@ -1,7 +1,7 @@
 import { baseAPI } from "./baseService";
 import { logError } from "../utilities/errorUtils";
 
-export const getCats = () => {
+export const getCats = (): Promise<Cat[]> => {
   return baseAPI
     .get("images/search", {
       params: {
@@ -12,7 +12,7 @@ export const getCats = () => {
     .then(({ data }) => data);
 };
 
-export const voteForCat = (imageId, value) => {
+export const voteForCat = (imageId: string, value: boolean): Promise<void> => {
   return baseAPI
     .get("votes", {
       data: {
@@ -22,5 +22,5 @@ export const voteForCat = (imageId, value) => {
       }
     })
     .then(({ data }) => data)
-    .catch(error => logError(erorr));
+    .catch(error => logError("voteForCat", error));
 };

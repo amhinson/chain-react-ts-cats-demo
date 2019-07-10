@@ -913,6 +913,35 @@
     "@types/istanbul-lib-coverage" "*"
     "@types/istanbul-lib-report" "*"
 
+"@types/prop-types@*":
+  version "15.7.1"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.1.tgz#f1a11e7babb0c3cad68100be381d1e064c68f1f6"
+  integrity sha512-CFzn9idOEpHrgdw8JsoTkaDDyRWk1jrzIV8djzcgpq0y9tG4B4lFT+Nxh52DVpDXV+n4+NPNv7M1Dj5uMp6XFg==
+
+"@types/react-native-vector-icons@^6.4.1":
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/@types/react-native-vector-icons/-/react-native-vector-icons-6.4.1.tgz#d0862f3eb97bbe5720ab604f2f10ee07dacb31ef"
+  integrity sha512-2C9jyyJKEjzX0C4nP+9rNNjEhutWwalkRdaSTEYtNjUkkkTk68WGG2hgjrcBjdm4Gn1Vi9OgUd+FR8GNmCyp+A==
+  dependencies:
+    "@types/react" "*"
+    "@types/react-native" "*"
+
+"@types/react-native@*", "@types/react-native@^0.60.0":
+  version "0.60.0"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.60.0.tgz#992ecf1e59c4a92ffa1c1b92c669802e433acd05"
+  integrity sha512-9av+Wgh3j7nQzK6MXIGMqc57M53Ilfcyhq49SRzO/Jv9e7PdQNjJrCiXoHSvtKwuQpwxMkomAfnbcxxkp0zzBw==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/react" "*"
+
+"@types/react@*", "@types/react@^16.8.23":
+  version "16.8.23"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.8.23.tgz#ec6be3ceed6353a20948169b6cb4c97b65b97ad2"
+  integrity sha512-abkEOIeljniUN9qB5onp++g0EY38h7atnDHxwKUFz1r3VH1+yG1OKi2sNPTyObL40goBmfKFpdii2lEzwLX1cA==
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^2.2.0"
+
 "@types/stack-utils@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-1.0.1.tgz#0a851d3bd96498fa25c33ab7278ed3bd65f06c3e"
@@ -1784,6 +1813,11 @@ cssstyle@^1.0.0:
   integrity sha512-43wY3kl1CVQSvL7wUY1qXkxVGkStjpkDmVjiIKX8R97uhajy8Bybay78uOtqvh7Q5GK75dNPfW0geWjE6qQQow==
   dependencies:
     cssom "0.3.x"
+
+csstype@^2.2.0:
+  version "2.6.5"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.5.tgz#1cd1dff742ebf4d7c991470ae71e12bb6751e034"
+  integrity sha512-JsTaiksRsel5n7XwqPAfB0l3TFKdpjW/kgAELf9vrb5adGA7UCPLajKK5s3nFrcFm3Rkyp/Qkgl73ENc1UY3cA==
 
 dashdash@^1.12.0:
   version "1.14.1"

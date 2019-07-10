@@ -3,9 +3,12 @@ import { StyleSheet } from "react-native";
 import { FlatList, TouchableOpacity } from "react-native-gesture-handler";
 import { Image } from "react-native-elements";
 import { getCats } from "../services/catService";
+import { NavigationScreenComponent } from "react-navigation";
 
-const Home = props => {
-  const [catsWithHats, setCatsWithHats] = useState([]);
+interface Props {}
+
+const Home: NavigationScreenComponent<null, null, Props> = props => {
+  const [catsWithHats, setCatsWithHats] = useState<Cat[]>([]);
 
   useEffect(() => {
     async function init() {
@@ -15,7 +18,7 @@ const Home = props => {
     init();
   }, []);
 
-  function onCatPress(cat) {
+  function onCatPress(cat: Cat) {
     props.navigation.navigate("rateCat", { cat });
   }
 
